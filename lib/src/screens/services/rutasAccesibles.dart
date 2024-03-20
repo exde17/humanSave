@@ -100,12 +100,12 @@ class RutasAccesiblesState extends State<RutasAccesibles> {
       if (index == 0) {
         Navigator.pushNamed(context, Routes.home);
       }
-      // if (index == 1) {
-      //   Navigator.pushNamed(context, Routes.empleate);
-      // }
-      // if (index == 2) {
-      //   Navigator.pushNamed(context, Routes.homeServices);
-      // }
+      if (index == 1) {
+        Navigator.pushNamed(context, Routes.queHacer);
+      }
+      if (index == 2) {
+        Navigator.pushNamed(context, Routes.rutasAccesibles);
+      }
       // Aquí puedes controlar la navegación o la lógica de la aplicación basada en el índice
       // No trates de manejar el estado del mapa o la ubicación aquí
     });

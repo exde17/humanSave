@@ -36,7 +36,7 @@ class CustonBottomNavigation extends StatelessWidget {
     return BottomNavigationBar(
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Inicio'),
-        BottomNavigationBarItem(icon: Icon(Icons.work), label: 'Empleate'),
+        BottomNavigationBarItem(icon: Icon(Icons.work), label: 'Consejos'),
         BottomNavigationBarItem(
             icon: Icon(Icons.room_service), label: 'Servicios'),
       ],

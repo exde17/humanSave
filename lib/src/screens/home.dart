@@ -20,12 +20,12 @@ class HomeState extends State<Home> {
     setState(() {
       _selectedIndex = index;
       // Verifica qué ítem se seleccionó y navega a la pantalla correspondiente
-      // if (index == 1) {
-      //   Navigator.pushNamed(context, Routes.empleate);
-      // }
-      // if (index == 2) {
-      //   Navigator.pushNamed(context, Routes.homeServices);
-      // }
+      if (index == 0) {
+        Navigator.pushNamed(context, Routes.home);
+      }
+      if (index == 1) {
+        Navigator.pushNamed(context, Routes.queHacer);
+      }
     });
   }
 

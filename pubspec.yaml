@@ -72,6 +72,12 @@ flutter:
     - lib\assets\mapita.png
     - lib\assets\donacion.png
     - lib\assets\logoHumanSave_transparent.png
+    - lib\assets\bross.webp
+    - lib\assets\crisis1.jpeg
+    - lib\assets\crisis2.jpeg
+    - lib\assets\crisis3.jpeg
+    - lib\assets\port1.jpeg
+    - lib\assets\port2.jpeg
 
 
   # The following line ensures that the Material Icons font is
