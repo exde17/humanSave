@@ -342,7 +342,7 @@ class _LoginState extends State<Login> {
         //       builder: (context) =>
         //           const Home()), // Navega a la pantalla de inicio
         // );
-        Navigator.pushReplacementNamed(context, Routes.rutasAccesibles);
+        Navigator.pushReplacementNamed(context, Routes.ubica);
       } else {
         // Error al hacer login
         ScaffoldMessenger.of(context).showSnackBar(

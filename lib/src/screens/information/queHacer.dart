@@ -11,50 +11,40 @@ class QueHacer extends StatefulWidget {
 }
 
 class QueHacerState extends State<QueHacer> {
-  int _selectedIndex = 0; // Estado para rastrear el ítem seleccionado
-
-  // void _onItemTapped(int index) {
-  //   setState(() {
-  //     _selectedIndex = index;
-
-  //     if (index == 0) {
-  //       Navigator.pushNamed(context, Routes.home);
-  //     }
-  //     if (index == 1) {
-  //       Navigator.pushNamed(context, Routes.rutasAccesibles);
-  //     }
-  //     if (index == 2) {
-  //       Navigator.pushNamed(context, Routes.rutasAccesibles);
-  //     }
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: CustomAppBar.buildAppBar(context),
+      //menu lateral
       drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
+        child: Column(
           children: <Widget>[
-            const DrawerHeader(
-              child: Text('Menú'),
+            const UserAccountsDrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.pinkAccent, // Cambia esto al color que desees
+              ),
+              accountName: Text("Usuario"),
+              accountEmail: Text("usuario@example.com"),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Text(
+                  "U",
+                  style: TextStyle(fontSize: 40.0),
+                ),
               ),
             ),
             ListTile(
-              title: const Text('Opción 1'),
+              leading: const Icon(Icons.home),
+              title: const Text('Inicio'),
               onTap: () {
-                // Actualiza el estado de la aplicación
-                // ...
-                // Luego cierra el drawer
-                Navigator.pop(context);
+                Navigator.pushNamed(context, Routes.ubica);
+                // Navigator.pop(context);
               },
             ),
             ListTile(
-              title: const Text('Opción 2'),
+              leading: const Icon(Icons.settings),
+              title: const Text('Configuración'),
               onTap: () {
                 // Actualiza el estado de la aplicación
                 // ...
@@ -69,6 +59,7 @@ class QueHacerState extends State<QueHacer> {
       body: SingleChildScrollView(
           child: Center(
         child: Container(
+          // color: Colors.white,
           height: MediaQuery.of(context).size.height * 0.9, // Altura del cuerpo
           width: MediaQuery.of(context).size.width * 0.94, // Ancho del cuerpo
           decoration: BoxDecoration(
@@ -122,7 +113,7 @@ class QueHacerState extends State<QueHacer> {
                     children: <Widget>[
                       GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(context, Routes.home);
+                          Navigator.pushNamed(context, Routes.leve);
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -271,11 +262,6 @@ class QueHacerState extends State<QueHacer> {
           ),
         ),
       )),
-      //bottoms navigations
-      // bottomNavigationBar: CustonBottomNavigation(
-      //   selectedIndex: _selectedIndex,
-      //   onItemTapped: _onItemTapped,
-      // )
     );
   }
 }
