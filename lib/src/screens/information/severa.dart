@@ -7,14 +7,14 @@ import 'package:url_launcher/url_launcher.dart';
 final Uri _url =
     Uri.parse('https://autismo.org.es/el-autismo/que-es-el-autismo/');
 
-class Leve extends StatefulWidget {
-  const Leve({Key? key}) : super(key: key);
+class Severa extends StatefulWidget {
+  const Severa({Key? key}) : super(key: key);
 
   @override
-  LeveState createState() => LeveState();
+  SeveraState createState() => SeveraState();
 }
 
-class LeveState extends State<Leve> {
+class SeveraState extends State<Severa> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,7 +117,7 @@ class LeveState extends State<Leve> {
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height * 0.05),
                 Text(
-                  '¿Nivel 1: Crisis Leve?',
+                  '¿Nivel 3: Crisis Severa?',
                   style: TextStyle(
                     fontSize: MediaQuery.of(context).size.height * 0.03,
                     fontWeight: FontWeight.bold,
@@ -139,28 +139,28 @@ class LeveState extends State<Leve> {
                           ),
                         ),
                         Text(
-                          '1. Irritabilidad o frustración leve.',
+                          '1. Pérdida de control emocional total.',
                           style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.018,
                           ),
                         ),
                         Text(
-                          '2. Puede expresar incomodidad o malestar verbalmente.',
+                          '2. Comportamientos desafiantes o agresivos.',
                           style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.018,
                           ),
                         ),
                         Text(
-                          '3. Puede mostrar signos de inquietud o tensión física.',
+                          '3. Puede experimentar cambios extremos en la conducta o el estado de ánimo.',
                           style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.018,
                           ),
                         ),
                         Text(
-                          '4. Tiende a estar más sensible a estímulos sensoriales.',
+                          '4. Puede presentar autolesiones o comportamientos peligrosos.',
                           style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.018,
@@ -178,28 +178,28 @@ class LeveState extends State<Leve> {
                           ),
                         ),
                         Text(
-                          '1. Mantener la calma y proporcionar un ambiente tranquilo.',
+                          '1. Priorizar la seguridad del niño y de quienes lo rodean.',
                           style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.018,
                           ),
                         ),
                         Text(
-                          '2. Reducir la exposición a estímulos sensoriales abrumadores.',
+                          '2. Implementar técnicas de contención seguras si es necesario, asegurándose de no restringir la respiración o causar daño físico.',
                           style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.018,
                           ),
                         ),
                         Text(
-                          '3. Ofrecer opciones simples y claras para ayudar al niño a sentirse más controlado.',
+                          '3. Solicitar ayuda profesional de inmediato si la situación lo requiere.',
                           style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.018,
                           ),
                         ),
                         Text(
-                          '4. Implementar técnicas de relajación como respiraciones profundas o ejercicios de estiramiento suaves.',
+                          '4. Después de la crisis, proporcionar un ambiente tranquilo y de apoyo para ayudar al niño a recuperarse emocionalmente.',
                           style: TextStyle(
                             fontSize:
                                 MediaQuery.of(context).size.height * 0.018,

@@ -1,5 +1,7 @@
 import 'package:empower_app/src/screens/information/leve.dart';
+import 'package:empower_app/src/screens/information/moderada.dart';
 import 'package:empower_app/src/screens/information/queHacer.dart';
+import 'package:empower_app/src/screens/information/severa.dart';
 import 'package:empower_app/src/screens/services/ubica.dart';
 import 'package:flutter/material.dart';
 import 'package:empower_app/src/screens/home.dart';
@@ -15,6 +17,8 @@ class Routes {
   static const String queHacer = '/queHacer';
   static const String ubica = '/ubica';
   static const String leve = '/leve';
+  static const String moderada = '/moderada';
+  static const String severa = '/severa';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -30,6 +34,10 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const QueHacer());
       case leve:
         return MaterialPageRoute(builder: (_) => const Leve());
+      case moderada:
+        return MaterialPageRoute(builder: (_) => const Moderada());
+      case severa:
+        return MaterialPageRoute(builder: (_) => const Severa());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

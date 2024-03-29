@@ -99,14 +99,14 @@ class UbicaState extends State<Ubica> {
                 ),
               ),
             ),
-            // ListTile(
-            //   leading: const Icon(Icons.home),
-            //   title: const Text('Inicio'),
-            //   onTap: () {
-            //     // Navigator.pushNamed(context, Routes.ubica);
-            //     Navigator.pop(context);
-            //   },
-            // ),
+            ListTile(
+              leading: const Icon(Icons.sensor_occupied_sharp),
+              title: const Text('Casa Sensorial'),
+              onTap: () {
+                // Navigator.pushNamed(context, Routes.ubica);
+                Navigator.pop(context);
+              },
+            ),
             ListTile(
               leading: const Icon(Icons.settings),
               title: const Text('Configuración'),

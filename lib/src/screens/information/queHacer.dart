@@ -52,6 +52,14 @@ class QueHacerState extends State<QueHacer> {
                 Navigator.pop(context);
               },
             ),
+            ListTile(
+              leading: const Icon(Icons.sensor_occupied_sharp),
+              title: const Text('Casa Sensorial'),
+              onTap: () {
+                // Navigator.pushNamed(context, Routes.ubica);
+                Navigator.pop(context);
+              },
+            ),
             // Agrega más ListTile aquí para más opciones
           ],
         ),
@@ -160,7 +168,7 @@ class QueHacerState extends State<QueHacer> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(context, Routes.home);
+                          Navigator.pushNamed(context, Routes.moderada);
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -206,7 +214,7 @@ class QueHacerState extends State<QueHacer> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(context, Routes.home);
+                          Navigator.pushNamed(context, Routes.severa);
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
