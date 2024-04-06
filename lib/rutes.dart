@@ -1,3 +1,4 @@
+import 'package:empower_app/src/screens/information/casaSensorial.dart';
 import 'package:empower_app/src/screens/information/leve.dart';
 import 'package:empower_app/src/screens/information/moderada.dart';
 import 'package:empower_app/src/screens/information/queHacer.dart';
@@ -19,6 +20,7 @@ class Routes {
   static const String leve = '/leve';
   static const String moderada = '/moderada';
   static const String severa = '/severa';
+  static const String casaSesorial = '/casaSesorial';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -38,6 +40,8 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const Moderada());
       case severa:
         return MaterialPageRoute(builder: (_) => const Severa());
+      case casaSesorial:
+        return MaterialPageRoute(builder: (_) => const CasaSensoria());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

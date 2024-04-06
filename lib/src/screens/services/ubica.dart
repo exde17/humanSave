@@ -103,8 +103,8 @@ class UbicaState extends State<Ubica> {
               leading: const Icon(Icons.sensor_occupied_sharp),
               title: const Text('Casa Sensorial'),
               onTap: () {
-                // Navigator.pushNamed(context, Routes.ubica);
-                Navigator.pop(context);
+                Navigator.pushNamed(context, Routes.casaSesorial);
+                // Navigator.pop(context);
               },
             ),
             ListTile(

@@ -56,8 +56,8 @@ class QueHacerState extends State<QueHacer> {
               leading: const Icon(Icons.sensor_occupied_sharp),
               title: const Text('Casa Sensorial'),
               onTap: () {
-                // Navigator.pushNamed(context, Routes.ubica);
-                Navigator.pop(context);
+                Navigator.pushNamed(context, Routes.casaSesorial);
+                // Navigator.pop(context);
               },
             ),
             // Agrega más ListTile aquí para más opciones
@@ -98,7 +98,7 @@ class QueHacerState extends State<QueHacer> {
                         10), // Ajusta el radio del borde como necesites
                   ), // Ajusta el radio del borde como necesites
                   child: Image.asset(
-                    'lib/assets/port2.jpeg', // Asegúrate de que la ruta de tu imagen sea correcta
+                    'lib/assets/port2.jpeg',
                     fit: BoxFit
                         .fitWidth, // Ajusta la imagen para ocupar todo el ancho manteniendo sus proporciones
                   ),

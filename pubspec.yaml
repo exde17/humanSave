@@ -78,6 +78,9 @@ flutter:
     - lib\assets\crisis3.jpeg
     - lib\assets\port1.jpeg
     - lib\assets\port2.jpeg
+    - lib\assets\casaSensorial.png
+    - lib\assets\salassen2.webp
+    - lib\assets\salasen1.png
 
 
   # The following line ensures that the Material Icons font is
