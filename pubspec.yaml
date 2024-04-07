@@ -81,6 +81,11 @@ flutter:
     - lib\assets\casaSensorial.png
     - lib\assets\salassen2.webp
     - lib\assets\salasen1.png
+    - lib\assets\espacio.webp
+    - lib\assets\medida.png
+    - lib\assets\confortable.webp
+    - lib\assets\festin.webp
+    - lib\assets\lienzo.webp
 
 
   # The following line ensures that the Material Icons font is
