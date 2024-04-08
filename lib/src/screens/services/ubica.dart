@@ -108,14 +108,6 @@ class UbicaState extends State<Ubica> {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.settings),
-              title: const Text('Configuración'),
-              onTap: () {
-                // Navigator.pushNamed(context, Routes.queHacer);
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
               leading: const Icon(Icons.access_alarm_outlined),
               title: const Text('Que hacer'),
               onTap: () {
@@ -123,6 +115,20 @@ class UbicaState extends State<Ubica> {
                 // Navigator.pop(context);
               },
             ),
+            ListTile(
+              leading: const Icon(Icons.search),
+              title: const Text('Comunidades'),
+              onTap: () => Navigator.pushNamed(context, Routes.searchScreen),
+            ),
+            ListTile(
+              leading: const Icon(Icons.settings),
+              title: const Text('Configuración'),
+              onTap: () {
+                // Navigator.pushNamed(context, Routes.queHacer);
+                Navigator.pop(context);
+              },
+            ),
+
             // Agrega más ListTile aquí para más opciones
           ],
         ),

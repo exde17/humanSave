@@ -86,6 +86,14 @@ flutter:
     - lib\assets\confortable.webp
     - lib\assets\festin.webp
     - lib\assets\lienzo.webp
+    - lib\assets\teayudo.png
+    - lib\assets\asan.png
+    - lib\assets\aba.webp
+    - lib\assets\SOCIETY.png
+    - lib\assets\federacion.png
+    - lib\assets\autismo_soria_logo.png
+    - lib\assets\cropped-logo-blanco-1.png
+    - lib\assets\Affiliate.png
 
 
   # The following line ensures that the Material Icons font is

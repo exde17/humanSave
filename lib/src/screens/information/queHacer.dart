@@ -42,6 +42,20 @@ class QueHacerState extends State<QueHacer> {
                 // Navigator.pop(context);
               },
             ),
+
+            ListTile(
+              leading: const Icon(Icons.sensor_occupied_sharp),
+              title: const Text('Casa Sensorial'),
+              onTap: () {
+                Navigator.pushNamed(context, Routes.casaSesorial);
+                // Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.search),
+              title: const Text('Comunidades'),
+              onTap: () => Navigator.pushNamed(context, Routes.searchScreen),
+            ),
             ListTile(
               leading: const Icon(Icons.settings),
               title: const Text('Configuración'),
@@ -50,14 +64,6 @@ class QueHacerState extends State<QueHacer> {
                 // ...
                 // Luego cierra el drawer
                 Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.sensor_occupied_sharp),
-              title: const Text('Casa Sensorial'),
-              onTap: () {
-                Navigator.pushNamed(context, Routes.casaSesorial);
-                // Navigator.pop(context);
               },
             ),
             // Agrega más ListTile aquí para más opciones
